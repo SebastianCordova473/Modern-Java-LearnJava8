@@ -16,6 +16,7 @@ public class StreamMap {
         .map(Student::getName) // Stream<String>
         .map(String::toUpperCase)// Stream<String> -> uppercase operation on each input
         .collect(toList());// List<String>
+
   }
 
   public static Set<String> namesSet() {
@@ -25,7 +26,6 @@ public class StreamMap {
         .map(String::toUpperCase)// Stream<String> -> uppercase operation on each input
         .collect(toSet());// Set<String>
   }
-
   public static void main(String[] args) {
     System.out.println(namesList());
     System.out.println(namesSet());
