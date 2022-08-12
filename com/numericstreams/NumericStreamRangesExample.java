@@ -17,7 +17,7 @@ public class NumericStreamRangesExample {
         System.out.println();
 
         LongStream longStream = LongStream.rangeClosed(1,50);
-        System.out.println("cound longStream: " + longStream.count());
+        System.out.println("count longStream: " + longStream.count());
         LongStream.rangeClosed(1,50).forEach(value -> System.out.print(value + ","));
         System.out.println();
         IntStream.range(1,50).asDoubleStream().forEach((value -> System.out.print(value + ",")));
